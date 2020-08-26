@@ -8,7 +8,7 @@
 </head>
 <body>
     <div class="borda">
-        <form action="" method="POST">
+        <form action="calcular.php" method="POST">
             <label>Número 1:</label>
             <input type="number" name="num1">
             -
