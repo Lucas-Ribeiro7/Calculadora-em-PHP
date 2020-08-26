@@ -1,0 +1,12 @@
+body{
+    font: Arial 15px;
+    width: 1000px;
+    margin: auto;
+}
+div.borda{
+    border-radius: 20px;
+    background-color: rgb(140, 173, 173);
+    padding: 15px;
+    width: 750px;
+    margin: auto;
+}
