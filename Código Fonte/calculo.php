@@ -10,10 +10,22 @@
                 $this->setNum2($num2); 
             }
             
-            function calcularSoma();
-            function calcularSubtracao();
-            function calcularDivisao();
-            function calcularMultiplicacao();
+            function calcularSoma(){
+                $resul = $num1 + $num2;
+                return($resul);
+            }
+            function calcularSubtracao(){
+                $resul = $num1 - $num2;
+                return($resul);
+            }
+            function calcularDivisao(){
+                $resul = $num1 / $num2;
+                return($resul);
+            }
+            function calcularMultiplicacao(){
+                $resul = $num1 * $num2;
+                return($resul);
+            }
 
             function getNum1(){
                 return $this->$num1;
