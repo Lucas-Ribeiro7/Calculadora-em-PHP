@@ -1,6 +1,5 @@
 <?php
-    require_once 'interface.php';
-        class calculo implements calculadora{
+        class calculo{
             protected $num1;
             protected $num2;
             protected $resul;
@@ -11,8 +10,8 @@
             }
             
             function calcularSoma(){
-                $resul = $num1 + $num2;
-                return($resul);
+                $this->$resul = $this->$num1 + $this->$num2;
+                return($this->$resul);
             }
             function calcularSubtracao(){
                 $resul = $num1 - $num2;
@@ -37,7 +36,7 @@
             function getNum2(){
                 return $this->$num2;
             }
-            function setNum1($num2){
+            function setNum2($num2){
                 $this->$num2 = $num2;
             }
 

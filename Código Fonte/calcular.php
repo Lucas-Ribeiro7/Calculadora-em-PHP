@@ -9,8 +9,28 @@
 <body>
     <div class="borda">
         <?php
-            $num1 = $_POST['num1'];
-            $num2 = $_POST['num2'];
+            require_once 'calculo.php';
+                $num1 = $_POST['num1'];
+                $num2 = $_POST['num2'];
+                $operacao = $_POST['operacao'];
+
+                //Criação do Objeto Calculo
+                $calculo = new calculo($num1, $num2);
+
+                switch($operacao){
+                    case 'soma' :
+                    
+                    break;
+                    case 'subtracao' :
+
+                    break;
+                    case 'divisao' :
+
+                    break;
+                    case 'multiplicacao' :
+
+                    break;
+                }
 
         ?>
     </div>
