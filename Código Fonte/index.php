@@ -11,7 +11,8 @@
         <form action="calcular.php" method="POST">
             <label>Número 1:</label>
             <input type="number" name="num1">
-            -
+            <br>
+            <br>
             <label>Número 2:</label>
             <input type="number" name="num2">
             <br>

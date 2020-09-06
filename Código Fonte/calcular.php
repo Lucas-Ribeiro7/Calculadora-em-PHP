@@ -14,25 +14,45 @@
                 $num2 = $_POST['num2'];
                 $operacao = $_POST['operacao'];
 
-                //Criação do Objeto Calculo
-                $calculo = new calculo($num1, $num2);
+    
 
                 switch($operacao){
                     case 'soma' :
-                    
+                        echo "<p>O Resultado é " . calcularSoma($num1, $num2) . "</p>";
                     break;
                     case 'subtracao' :
-
+                        echo "<p>O Resultado é " . calcularSubtracao($num1, $num2) . "</p>";
                     break;
                     case 'divisao' :
-
+                        echo "<p>O Resultado é " . calcularDivisao($num1, $num2) . "</p>";
                     break;
                     case 'multiplicacao' :
-
+                        echo "<p>O Resultado é " . calcularMultiplicacao($num1, $num2) . "</p>";
                     break;
+                    default :
+                    echo "<p>ERRO!</p>";
                 }
 
+                //Função
+                function calcularSoma($num1, $num2){
+                    $resul = $num1 + $num2;
+                    return($resul);
+                }
+                function calcularSubtracao($num1, $num2){
+                    $resul = $num1 - $num2;
+                    return($resul);
+                }
+                function calcularDivisao($num1, $num2){
+                    $resul = $num1 / $num2;
+                    return($resul);
+                }
+                function calcularMultiplicacao($num1, $num2){
+                    $resul = $num1 * $num2;
+                    return($resul);
+                }
         ?>
+        <a href="index.php"><button>Fazer outro Calculo</button></a>
+        
     </div>
 </body>
 </html>
